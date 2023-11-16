@@ -11,6 +11,10 @@
 		146001192B056DD900A855D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146001182B056DD900A855D7 /* ContentView.swift */; };
 		1460011B2B056DD900A855D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1460011A2B056DD900A855D7 /* Assets.xcassets */; };
 		1460011E2B056DD900A855D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1460011D2B056DD900A855D7 /* Preview Assets.xcassets */; };
+		1460012B2B057FF100A855D7 /* beverages.csv in Resources */ = {isa = PBXBuildFile; fileRef = 146001292B057FF100A855D7 /* beverages.csv */; };
+		1460012C2B057FF100A855D7 /* wellbeing.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1460012A2B057FF100A855D7 /* wellbeing.csv */; };
+		1460012E2B058CE100A855D7 /* DrinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460012D2B058CE100A855D7 /* DrinkData.swift */; };
+		146001302B059E3900A855D7 /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460012F2B059E3900A855D7 /* DrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		1460011A2B056DD900A855D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1460011D2B056DD900A855D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1460011F2B056DD900A855D7 /* cpsc583visualization.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cpsc583visualization.entitlements; sourceTree = "<group>"; };
+		146001292B057FF100A855D7 /* beverages.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beverages.csv; sourceTree = "<group>"; };
+		1460012A2B057FF100A855D7 /* wellbeing.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wellbeing.csv; sourceTree = "<group>"; };
+		1460012D2B058CE100A855D7 /* DrinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkData.swift; sourceTree = "<group>"; };
+		1460012F2B059E3900A855D7 /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,11 @@
 			children = (
 				146001162B056DD900A855D7 /* cpsc583visualizationApp.swift */,
 				146001182B056DD900A855D7 /* ContentView.swift */,
+				1460012F2B059E3900A855D7 /* DrinkView.swift */,
+				1460012D2B058CE100A855D7 /* DrinkData.swift */,
 				1460011A2B056DD900A855D7 /* Assets.xcassets */,
+				146001292B057FF100A855D7 /* beverages.csv */,
+				1460012A2B057FF100A855D7 /* wellbeing.csv */,
 				1460011F2B056DD900A855D7 /* cpsc583visualization.entitlements */,
 				1460011C2B056DD900A855D7 /* Preview Content */,
 			);
@@ -127,7 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1460012C2B057FF100A855D7 /* wellbeing.csv in Resources */,
 				1460011E2B056DD900A855D7 /* Preview Assets.xcassets in Resources */,
+				1460012B2B057FF100A855D7 /* beverages.csv in Resources */,
 				1460011B2B056DD900A855D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				146001192B056DD900A855D7 /* ContentView.swift in Sources */,
+				1460012E2B058CE100A855D7 /* DrinkData.swift in Sources */,
+				146001302B059E3900A855D7 /* DrinkView.swift in Sources */,
 				146001172B056DD900A855D7 /* cpsc583visualizationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

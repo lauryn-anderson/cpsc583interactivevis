@@ -1,0 +1,343 @@
+﻿Who,Datetime,Amount,Beverage Category,Beverage,Context Category,Context
+Eduardo,2023-10-24 07:00:00,250,coffee,coffee,routine,woke up
+Eduardo,2023-10-24 07:30:00,1000,water,water,workout,exercise
+Eduardo,2023-10-24 09:00:00,250,milk,whey,workout,after workout
+Eduardo,2023-10-24 11:00:00,200,water,water,hydrate,hydrate
+Eduardo,2023-10-24 12:00:00,150,juice,orange juice,meal/snack,during lunch
+Eduardo,2023-10-24 15:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-24 19:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-24 21:00:00,100,milk,milk,routine,before sleep
+Eduardo,2023-10-25 07:10:00,250,coffee,coffee,routine,wake up
+Eduardo,2023-10-25 08:00:00,1000,water,water,workout,workout
+Eduardo,2023-10-25 09:00:00,500,water,water,hydrate,hydrate
+Eduardo,2023-10-25 11:00:00,100,water,water,hydrate,hydrate
+Eduardo,2023-10-25 12:00:00,200,juice,orange juice,meal/snack,for lunch
+Eduardo,2023-10-25 18:00:00,200,water,water,hydrate,hydrate
+Eduardo,2023-10-25 20:00:00,50,water,water,meal/snack,during dinner
+Eduardo,2023-10-25 21:00:00,100,milk,milk,routine,before sleep
+Eduardo,2023-10-26 07:00:00,200,milk,milk,routine,woke up
+Eduardo,2023-10-26 07:30:00,1000,water,water,workout,exercise
+Eduardo,2023-10-26 08:00:00,150,milk,milk+whey,workout,post-workout
+Eduardo,2023-10-26 09:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-26 11:00:00,100,water,water,hydrate,hydrate
+Eduardo,2023-10-26 12:00:00,100,juice,orange juice,meal/snack,during lunch
+Eduardo,2023-10-26 15:00:00,200,water,water,hydrate,hydrate
+Eduardo,2023-10-26 17:00:00,100,water,water,hydrate,hydrate
+Eduardo,2023-10-26 20:00:00,50,water,water,hydrate,hydrate
+Eduardo,2023-10-26 23:00:00,100,water,water,hydrate,hydrate
+Eduardo,2023-10-27 07:00:00,150,coffee,coffee,routine,woke up
+Eduardo,2023-10-27 08:00:00,1000,water,water,workout,exercise
+Eduardo,2023-10-27 09:00:00,150,milk,milk+whey,workout,post-workout
+Eduardo,2023-10-27 10:00:00,200,water,water,hydrate,hydrate
+Eduardo,2023-10-27 11:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-27 12:00:00,100,juice,orange juice,hydrate,hydrate
+Eduardo,2023-10-27 15:00:00,250,water,water,hydrate,hydrate
+Eduardo,2023-10-27 17:00:00,200,water,water,hydrate,hydrate
+Eduardo,2023-10-27 21:00:00,500,alcoholic,wine,enjoy,party
+Eduardo,2023-10-27 22:00:00,500,alcoholic,wine,enjoy,party
+Eduardo,2023-10-28 09:00:00,1000,water,water,hydrate,thirsty
+Eduardo,2023-10-28 11:00:00,200,juice,orange juice,meal/snack,lunch
+Eduardo,2023-10-28 13:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-28 15:00:00,100,water,water,hydrate,hydrate
+Eduardo,2023-10-28 21:00:00,250,pop,coke,meal/snack,during dinner
+Eduardo,2023-10-28 23:00:00,50,water,water,routine,before sleep
+Eduardo,2023-10-29 09:00:00,100,coffee,coffee,routine,morning
+Eduardo,2023-10-29 12:00:00,100,juice,orange juice,meal/snack,lunch
+Eduardo,2023-10-29 13:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-29 15:00:00,100,water,water,hydrate,hydrate
+Eduardo,2023-10-29 21:00:00,200,water,water,meal/snack,during dinner
+Eduardo,2023-10-30 07:00:00,100,coffee,coffee,routine,woke up
+Eduardo,2023-10-30 07:30:00,1000,water,water,workout,exercise
+Eduardo,2023-10-30 09:00:00,250,milk,whey,workout,after workout
+Eduardo,2023-10-30 11:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-30 12:00:00,100,juice,orange juice,meal/snack,during lunch
+Eduardo,2023-10-30 15:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-30 17:00:00,300,water,water,hydrate,hydrate
+Eduardo,2023-10-30 19:00:00,100,tea,tea,meal/snack,after dinner
+Eduardo,2023-10-30 22:00:00,50,water,water,routine,before sleep
+David,2023-10-24 05:30:00,250,water,water,routine,woke up
+David,2023-10-24 06:30:00,2000,water,water,workout,exercise
+David,2023-10-24 09:00:00,300,milk,whey,workout,post-workout
+David,2023-10-24 11:00:00,200,water,water,hydrate,hydrate
+David,2023-10-24 12:30:00,300,water,water,routine,pre-lunch vitamins
+David,2023-10-24 15:00:00,300,water,water,hydrate,hydrate
+David,2023-10-24 17:00:00,300,water,water,hydrate,hydrate
+David,2023-10-24 19:00:00,300,water,water,routine,pre-dinner vitamins
+David,2023-10-24 21:00:00,350,water,water,hydrate,hydrate
+David,2023-10-25 05:30:00,250,water,water,routine,woke up
+David,2023-10-25 06:30:00,2000,water,water,workout,exercise
+David,2023-10-25 09:00:00,300,milk,whey,workout,post-workout
+David,2023-10-25 11:30:00,200,water,water,hydrate,hydrate
+David,2023-10-25 12:00:00,300,water,water,routine,pre-lunch vitamins
+David,2023-10-25 14:00:00,500,water,water,hydrate,hydrate
+David,2023-10-25 16:00:00,250,water,water,hydrate,hydrate
+David,2023-10-25 18:00:00,250,water,water,hydrate,hydrate
+David,2023-10-25 19:00:00,300,water,water,routine,pre-dinner vitamins
+David,2023-10-25 21:00:00,200,water,water,hydrate,hydrate
+David,2023-10-26 05:30:00,250,water,water,routine,woke up
+David,2023-10-26 06:30:00,2000,water,water,workout,exercise
+David,2023-10-26 08:30:00,250,milk,whey,workout,post-workout
+David,2023-10-26 09:00:00,300,tea,camomile tea,enjoy,relax
+David,2023-10-26 12:30:00,300,water,water,routine,pre-lunch vitamins
+David,2023-10-26 15:00:00,200,water,water,hydrate,hydrate
+David,2023-10-26 16:00:00,250,water,water,hydrate,hydrate
+David,2023-10-26 17:00:00,300,water,water,routine,pre-dinner vitamins
+David,2023-10-26 18:00:00,200,water,water,hydrate,hydrate
+David,2023-10-26 19:30:00,200,water,water,hydrate,hydrate
+David,2023-10-26 21:00:00,300,water,water,hydrate,hydrate
+David,2023-10-27 05:30:00,250,water,water,routine,woke up
+David,2023-10-27 06:30:00,2000,water,water,workout,exercise
+David,2023-10-27 09:00:00,300,milk,whey,workout,post-workout
+David,2023-10-27 10:00:00,200,water,water,hydrate,hydrate
+David,2023-10-27 12:00:00,300,water,water,routine,pre-lunch vitamins
+David,2023-10-27 14:00:00,300,water,water,hydrate,hydrate
+David,2023-10-27 15:30:00,250,water,water,hydrate,hydrate
+David,2023-10-27 17:00:00,300,water,water,hydrate,hydrate
+David,2023-10-27 19:00:00,300,water,water,routine,pre-dinner vitamins
+David,2023-10-27 20:30:00,375,alcoholic,soju,enjoy,fun
+David,2023-10-27 21:00:00,750,alcoholic,soju,enjoy,fun
+David,2023-10-28 02:00:00,400,tea,nestea,hydrate,thirsty
+David,2023-10-28 03:00:00,300,water,water,hydrate,hydrate
+David,2023-10-28 10:00:00,300,water,water,hydrate,hydrate
+David,2023-10-28 12:00:00,200,water,water,routine,pre-lunch vitamins
+David,2023-10-28 14:00:00,200,water,water,hydrate,hydrate
+David,2023-10-28 16:00:00,300,water,water,hydrate,thirsty
+David,2023-10-28 17:00:00,300,water,water,hydrate,hydrate
+David,2023-10-28 18:00:00,200,water,water,routine,pre-dinner vitamins
+David,2023-10-28 20:00:00,300,water,water,hydrate,hydrate
+David,2023-10-28 21:00:00,400,pop,coke,hydrate,thirsty
+David,2023-10-28 23:00:00,300,water,water,hydrate,hydrate
+David,2023-10-29 10:00:00,300,water,water,hydrate,hydrate
+David,2023-10-29 12:00:00,200,water,water,routine,pre-lunch vitamins
+David,2023-10-29 13:00:00,200,water,water,hydrate,hydrate
+David,2023-10-29 14:30:00,200,water,water,hydrate,hydrate
+David,2023-10-29 16:00:00,300,water,water,hydrate,hydrate
+David,2023-10-29 17:00:00,300,water,water,hydrate,hydrate
+David,2023-10-29 18:30:00,200,water,water,routine,pre-dinner vitamins
+David,2023-10-29 20:00:00,300,water,water,hydrate,hydrate
+David,2023-10-29 21:00:00,200,water,water,hydrate,hydrate
+David,2023-10-29 22:30:00,100,water,water,hydrate,hydrate
+David,2023-10-29 23:30:00,200,water,water,hydrate,hydrate
+David,2023-10-30 05:30:00,250,water,water,routine,woke up
+David,2023-10-30 06:30:00,2000,water,water,workout,exercise
+David,2023-10-30 08:30:00,250,milk,whey,workout,post-workout
+David,2023-10-30 09:00:00,300,water,water,hydrate,hydrate
+David,2023-10-30 12:30:00,300,water,water,routine,pre-lunch vitamins
+David,2023-10-30 15:00:00,200,water,water,hydrate,hydrate
+David,2023-10-30 16:00:00,300,water,water,hydrate,hydrate
+David,2023-10-30 17:00:00,200,water,water,hydrate,hydrate
+David,2023-10-30 18:00:00,250,water,water,hydrate,hydrate
+David,2023-10-30 19:30:00,100,water,water,routine,pre-dinner vitamins
+David,2023-10-30 20:00:00,200,water,water,hydrate,hydrate
+David,2023-10-30 21:00:00,300,water,water,hydrate,hydrate
+Lauryn,2023-10-24 10:10:00,70,water,water,routine,brush teeth
+Lauryn,2023-10-24 11:10:00,300,chocolate milk,hot chocolate,gift,gift
+Lauryn,2023-10-24 12:50:00,340,water,water,hydrate,thirsty
+Lauryn,2023-10-24 14:55:00,340,water,water,hydrate,thirsty
+Lauryn,2023-10-24 16:15:00,340,water,water,hydrate,prepare to sing
+Lauryn,2023-10-24 18:25:00,200,chocolate milk,chocolate milk,meal/snack,with meal
+Lauryn,2023-10-24 22:30:00,340,water,water,hydrate,thirsty
+Lauryn,2023-10-24 23:00:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-24 23:30:00,200,water,water,hydrate,thirsty
+Lauryn,2023-10-25 13:30:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 15:00:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 15:40:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 16:20:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 17:00:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 17:10:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 17:30:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-25 19:00:00,300,water,water,meal/snack,with meal
+Lauryn,2023-10-25 21:55:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-26 00:15:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-26 09:30:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-26 12:25:00,340,water,water,hydrate,thirsty
+Lauryn,2023-10-26 17:30:00,340,water,water,hydrate,prepare to sing
+Lauryn,2023-10-26 18:50:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-26 19:10:00,300,water,water,meal/snack,with meal
+Lauryn,2023-10-27 01:30:00,250,pop,ginger ale,enjoy,social/fun
+Lauryn,2023-10-27 11:00:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-27 11:30:00,300,water,water,meal/snack,with meal
+Lauryn,2023-10-27 12:00:00,200,milk,milk,meal/snack,with cookie
+Lauryn,2023-10-27 15:05:00,340,water,water,hydrate,thirsty
+Lauryn,2023-10-27 15:40:00,300,water,water,meal/snack,with meal
+Lauryn,2023-10-27 20:30:00,340,water,water,hydrate,thirsty
+Lauryn,2023-10-27 21:15:00,300,smoothie/shake,milkshake,gift,gift with meal
+Lauryn,2023-10-28 11:00:00,350,water,water,hydrate,thirsty
+Lauryn,2023-10-28 12:25:00,150,milk,milk,meal/snack,with cookie
+Lauryn,2023-10-28 14:55:00,350,water,water,hydrate,thirsty
+Lauryn,2023-10-28 16:00:00,350,water,water,hydrate,thirsty
+Lauryn,2023-10-28 17:15:00,350,water,water,hydrate,thirsty
+Lauryn,2023-10-28 20:10:00,350,water,water,meal/snack,with meal
+Lauryn,2023-10-28 22:15:00,350,water,water,hydrate,thirsty
+Lauryn,2023-10-28 22:40:00,130,water,water,hydrate,thirsty
+Lauryn,2023-10-28 23:05:00,90,milk,milk,meal/snack,with cookie
+Lauryn,2023-10-29 10:56:00,350,water,water,hydrate,thirsty
+Lauryn,2023-10-29 12:15:00,100,milk,milk,meal/snack,with cookie
+Lauryn,2023-10-29 17:00:00,150,water,water,hydrate,thirsty
+Lauryn,2023-10-29 17:40:00,200,juice,orange/cranberry juice,gift,gift
+Lauryn,2023-10-29 18:30:00,400,water,water,hydrate,thirsty
+Lauryn,2023-10-29 19:45:00,200,juice,orange/cranberry juice,gift,gift
+Lauryn,2023-10-29 21:10:00,400,water,water,meal/snack,with meal
+Lauryn,2023-10-30 08:35:00,120,water,water,hydrate,thirsty
+Lauryn,2023-10-30 11:05:00,300,tea,peppermint tea,gift,gift
+Lauryn,2023-10-30 13:30:00,300,water,water,hydrate,thirsty
+Lauryn,2023-10-30 17:55:00,200,water,water,hydrate,thirsty
+Lauryn,2023-10-30 21:15:00,200,pop,ginger ale,gift,gift with meal
+Lauryn,2023-10-30 22:10:00,200,water,water,hydrate,thirsty
+Justin,2023-10-24 10:46:00,50,chocolate milk,chocolate soy milk,meal/snack,breakfast
+Justin,2023-10-24 13:23:00,710,water,water,hydrate,hydrate
+Justin,2023-10-24 17:43:00,710,water,water,meal/snack,snack
+Justin,2023-10-24 18:21:00,250,soup,soup,meal/snack,dinner
+Justin,2023-10-24 22:22:00,650,water,water,hydrate,hydrate
+Justin,2023-10-25 09:12:00,60,water,water,hydrate,hydrate
+Justin,2023-10-25 12:39:00,200,juice,matcha lemonade,gift,gift
+Justin,2023-10-25 12:42:00,200,juice,matcha lemonade,gift,gift
+Justin,2023-10-25 16:14:00,610,water,water,hydrate,hydrate
+Justin,2023-10-25 19:45:00,250,soup,soup,meal/snack,dinner
+Justin,2023-10-25 22:28:00,710,water,water,hydrate,hydrate
+Justin,2023-10-26 08:55:00,150,smoothie/shake,smoothie,meal/snack,breakfast
+Justin,2023-10-26 09:10:00,200,smoothie/shake,smoothie,meal/snack,breakfast
+Justin,2023-10-26 12:17:00,710,water,water,hydrate,hydrate
+Justin,2023-10-26 15:43:00,710,water,water,hydrate,hydrate
+Justin,2023-10-26 22:00:00,400,water,water,hydrate,thirsty
+Justin,2023-10-26 22:12:00,200,water,water,hydrate,thirsty
+Justin,2023-10-27 09:00:00,50,water,water,hydrate,thirsty
+Justin,2023-10-27 09:20:00,50,water,water,hydrate,hydrate
+Justin,2023-10-27 10:57:00,325,smoothie/shake,protein shake,hydrate,hydrate
+Justin,2023-10-27 13:00:00,710,water,water,workout,exercise
+Justin,2023-10-27 16:30:00,650,water,water,meal/snack,lunch
+Justin,2023-10-27 18:24:00,650,tea,boba,enjoy,treat
+Justin,2023-10-27 21:10:00,710,water,water,hydrate,hydrate
+Justin,2023-10-27 22:02:00,300,water,water,hydrate,hydrate
+Justin,2023-10-28 12:00:00,500,smoothie/shake,smoothie,meal/snack,breakfast
+Justin,2023-10-28 12:25:00,300,water,water,meal/snack,breakfast
+Justin,2023-10-28 14:59:00,300,tea,green tea,meal/snack,lunch
+Justin,2023-10-28 19:00:00,200,soup,soup,meal/snack,dinner
+Justin,2023-10-28 20:08:00,710,water,water,meal/snack,spicy
+Justin,2023-10-28 22:00:00,300,water,water,hydrate,hydrate
+Justin,2023-10-29 11:00:00,250,chocolate milk,choco milk,meal/snack,breakfast
+Justin,2023-10-29 11:00:00,250,juice,orange juice,meal/snack,breakfast
+Justin,2023-10-29 13:00:00,100,juice,orange juice,meal/snack,lunch
+Justin,2023-10-29 13:00:00,200,soup,soup,meal/snack,lunch
+Justin,2023-10-29 15:54:00,710,water,water,meal/snack,snack
+Justin,2023-10-29 22:12:00,710,water,water,hydrate,hydrate
+Justin,2023-10-30 09:10:00,50,water,water,hydrate,hydrate
+Justin,2023-10-30 12:17:00,650,water,water,hydrate,hydrate
+Justin,2023-10-30 13:40:00,650,water,water,hydrate,hydrate
+Justin,2023-10-30 19:37:00,300,pop,coke,meal/snack,dinner
+Justin,2023-10-30 22:56:00,710,water,water,hydrate,hydrate
+Kevin,2023-10-24 07:10:00,300,water,water,routine,wake up
+Kevin,2023-10-24 08:00:00,500,water,water,workout,workout
+Kevin,2023-10-24 09:00:00,350,coffee,coffee,meal/snack,breakfast
+Kevin,2023-10-24 10:00:00,300,water,water,hydrate,hydrate
+Kevin,2023-10-24 11:30:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-24 13:30:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-24 16:00:00,400,water,water,meal/snack,post food
+Kevin,2023-10-24 18:00:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-24 20:30:00,600,water,water,meal/snack,post food
+Kevin,2023-10-25 07:10:00,300,water,water,routine,wake up
+Kevin,2023-10-25 08:10:00,500,water,water,workout,workout
+Kevin,2023-10-25 09:00:00,350,coffee,coffee,meal/snack,breakfast
+Kevin,2023-10-25 10:00:00,300,water,water,hydrate,hydrate
+Kevin,2023-10-25 11:30:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-25 13:30:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-25 16:00:00,400,water,water,meal/snack,post food
+Kevin,2023-10-25 18:00:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-26 07:10:00,300,water,water,routine,wake up
+Kevin,2023-10-26 08:20:00,700,water,water,workout,workout
+Kevin,2023-10-26 10:10:00,300,water,water,hydrate,hydrate
+Kevin,2023-10-26 11:40:00,350,coffee,coffee,meal/snack,late breakfast
+Kevin,2023-10-26 13:30:00,500,water,water,meal/snack,post food
+Kevin,2023-10-26 16:00:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-26 18:00:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-26 20:35:00,600,juice,juice,meal/snack,post food
+Kevin,2023-10-27 07:10:00,300,water,water,routine,wake up
+Kevin,2023-10-27 07:40:00,600,water,water,workout,workout
+Kevin,2023-10-27 09:00:00,350,coffee,coffee,meal/snack,breakfast
+Kevin,2023-10-27 11:20:00,400,water,water,hydrate,hydrate
+Kevin,2023-10-27 11:30:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-27 13:30:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-27 18:30:00,450,water,water,meal/snack,post food
+Kevin,2023-10-28 02:30:00,500,pop,diet soda,meal/snack,post food
+Kevin,2023-10-28 10:20:00,350,coffee,coffee,meal/snack,breakfast
+Kevin,2023-10-28 11:30:00,600,water,water,hydrate,hydrate
+Kevin,2023-10-28 12:00:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-28 13:20:00,500,water,water,meal/snack,post food
+Kevin,2023-10-28 16:00:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-28 18:10:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-28 19:00:00,350,water,water,hydrate,thirsty
+Kevin,2023-10-28 21:10:00,500,pop,diet soda,meal/snack,post food
+Kevin,2023-10-29 09:30:00,350,coffee,coffee,meal/snack,breakfast
+Kevin,2023-10-29 11:00:00,450,water,water,hydrate,hydrate
+Kevin,2023-10-29 11:30:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-29 12:00:00,300,water,water,hydrate,hydrate
+Kevin,2023-10-29 14:30:00,400,water,water,meal/snack,post food
+Kevin,2023-10-29 16:00:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-29 18:00:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-30 09:30:00,350,coffee,coffee,meal/snack,breakfast
+Kevin,2023-10-30 10:20:00,750,water,water,hydrate,hydrate
+Kevin,2023-10-30 11:30:00,400,milk,whey+milk,meal/snack,hungry
+Kevin,2023-10-30 12:00:00,400,water,water,hydrate,hydrate
+Kevin,2023-10-30 14:30:00,350,water,water,meal/snack,post food
+Kevin,2023-10-30 16:00:00,350,pop,diet soda,enjoy,tastes good
+Kevin,2023-10-30 18:00:00,400,milk,whey+milk,meal/snack,hungry
+Erica,2023-10-24 08:45:00,500,water,water,hydrate,hydrate
+Erica,2023-10-24 13:27:00,700,water,water,hydrate,hydrate
+Erica,2023-10-24 16:54:00,700,smoothie/shake,fruit smoothies,meal/snack,snack
+Erica,2023-10-24 19:33:00,700,water,water,hydrate,hydrate
+Erica,2023-10-24 21:16:00,250,soup,soup,meal/snack,dinner
+Erica,2023-10-24 22:46:00,350,water,water,hydrate,thirsty
+Erica,2023-10-24 23:47:00,500,water,water,hydrate,hydrate
+Erica,2023-10-25 00:38:00,100,water,water,hydrate,thirsty
+Erica,2023-10-25 07:45:00,500,water,water,hydrate,hydrate
+Erica,2023-10-25 12:59:00,700,water,water,help symptoms,cough
+Erica,2023-10-25 18:30:00,700,water,water,hydrate,hydrate
+Erica,2023-10-25 20:03:00,100,water,water,hydrate,thirsty
+Erica,2023-10-25 20:45:00,200,soup,dessert soup,meal/snack,dinner
+Erica,2023-10-26 00:37:00,600,water,water,help symptoms,cough
+Erica,2023-10-26 01:22:00,150,water,water,hydrate,hydrate
+Erica,2023-10-26 07:45:00,500,water,water,hydrate,hydrate
+Erica,2023-10-26 14:02:00,500,water,water,hydrate,hydrate
+Erica,2023-10-26 16:17:00,415,coffee,latte,help symptoms,tired
+Erica,2023-10-26 18:02:00,200,water,water,hydrate,thirsty
+Erica,2023-10-26 19:30:00,200,water,water,hydrate,hydrate
+Erica,2023-10-26 20:41:00,200,soup,soup,meal/snack,dinner
+Erica,2023-10-27 00:30:00,300,water,water,hydrate,hydrate
+Erica,2023-10-27 01:13:00,150,water,water,hydrate,hydrate
+Erica,2023-10-27 08:38:00,500,water,water,hydrate,hydrate
+Erica,2023-10-27 09:23:00,250,milk,milk,meal/snack,breakfast (cereal)
+Erica,2023-10-27 12:42:00,200,water,water,hydrate,hydrate
+Erica,2023-10-27 13:02:00,200,soup,soup,meal/snack,lunch
+Erica,2023-10-27 15:00:00,200,water,water,hydrate,hydrate
+Erica,2023-10-27 17:45:00,621,juice,lemonade,meal/snack,snack
+Erica,2023-10-27 19:49:00,150,water,water,hydrate,thirsty
+Erica,2023-10-27 20:27:00,200,soup,soup,meal/snack,dinner
+Erica,2023-10-27 21:42:00,150,water,water,help symptoms,cough
+Erica,2023-10-28 01:30:00,300,water,water,hydrate,hydrate
+Erica,2023-10-28 02:30:00,150,water,water,hydrate,hydrate
+Erica,2023-10-28 09:45:00,500,water,water,hydrate,hydrate
+Erica,2023-10-28 10:39:00,250,milk,milk,meal/snack,breakfast (cereal)
+Erica,2023-10-28 15:42:00,500,water,water,hydrate,hydrate
+Erica,2023-10-28 16:45:00,650,tea,bubble tea,meal/snack,snack
+Erica,2023-10-28 19:31:00,200,water,water,hydrate,hydrate
+Erica,2023-10-28 20:32:00,100,water,water,hydrate,thirsty
+Erica,2023-10-28 20:56:00,200,soup,dessert soup,meal/snack,dinner
+Erica,2023-10-28 23:44:00,250,water,water,hydrate,hydrate
+Erica,2023-10-29 00:21:00,200,water,water,hydrate,hydrate
+Erica,2023-10-29 01:37:00,100,water,water,hydrate,thirsty
+Erica,2023-10-29 10:07:00,500,water,water,hydrate,hydrate
+Erica,2023-10-29 10:48:00,200,soup,soup,meal/snack,breakfast
+Erica,2023-10-29 18:11:00,600,water,water,hydrate,thirsty
+Erica,2023-10-29 20:16:00,250,water,water,hydrate,thirsty
+Erica,2023-10-29 20:55:00,200,soup,dessert soup,meal/snack,dinner
+Erica,2023-10-29 23:00:00,200,water,water,hydrate,hydrate
+Erica,2023-10-30 00:30:00,150,water,water,hydrate,hydrate
+Erica,2023-10-30 01:12:00,100,water,water,hydrate,thirsty
+Erica,2023-10-30 07:48:00,500,water,warm water,hydrate,hydrate
+Erica,2023-10-30 12:27:00,700,water,water,hydrate,hydrate
+Erica,2023-10-30 14:41:00,450,water,water,help symptoms,cough
+Erica,2023-10-30 16:02:00,473,coffee,latte,help symptoms,tired
+Erica,2023-10-30 20:35:00,250,water,water,hydrate,hydrate
+Erica,2023-10-30 20:58:00,250,soup,soup,meal/snack,dinner
+Erica,2023-10-30 23:03:00,700,water,water,help symptoms,cough
+Erica,2023-10-30 23:56:00,500,water,water,help symptoms,cough

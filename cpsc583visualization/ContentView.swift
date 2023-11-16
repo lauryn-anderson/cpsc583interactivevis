@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    var drinks = importDrinkData()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ForEach(drinks) { drink in
+                DrinkView(drink: drink)
+            }
         }
         .padding()
+//        .onAppear(perform: convertCSVIntoArray)
     }
 }
 
