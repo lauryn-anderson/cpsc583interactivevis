@@ -27,6 +27,28 @@ public class Drink {
         self.contextCategory = contextCategory
         self.context = context
     }
+    
+    enum People: String, CaseIterable, Identifiable {
+        case david, eduardo, erica, justin, kevin, lauryn
+        var id: Self { self }
+    }
+    
+    static func getName(person: People) -> String {
+        switch person {
+        case .david:
+            return "David"
+        case .eduardo:
+            return "Eduardo"
+        case .erica:
+            return "Erica"
+        case .justin:
+            return "Justin"
+        case .kevin:
+            return "Kevin"
+        default:
+            return "Lauryn"
+        }
+    }
 }
 
 
@@ -90,4 +112,23 @@ public func importDrinkData() -> [Drink] {
         }
     }
     return drinks
+}
+
+public func filterDrinksByDay(drinks: [Drink], day: Int) -> [Drink] {
+    // apparently Swift doesn't do list comprehensions like Python
+    var filteredDrinks: [Drink] = []
+    for drink in drinks {
+        if (DateTools.isOn(day: day, date: drink.datetime)) {
+            filteredDrinks.append(drink)
+        }
+    }
+    return filteredDrinks
+}
+
+public func getTotalDrinkAmount(drinks: [Drink]) -> Int {
+    var total = 0
+    for drink in drinks {
+        total += drink.amount
+    }
+    return total
 }

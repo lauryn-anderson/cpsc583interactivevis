@@ -24,10 +24,10 @@ struct DrinkView: View {
                     .frame(width: CGFloat(DateTools.minuteOfDay(datetime: drink.datetime)) / widthDivisor * width)
                 VStack(spacing: 0) {
                     Rectangle()
-                        .frame(height: CGFloat(integerLiteral: drink.amount) / heightDivisor)
                         .foregroundColor(getColor())
                     Divider()
                 }
+                .frame(height: CGFloat(integerLiteral: drink.amount) / heightDivisor)
             }
             .frame(width: width)
         }
@@ -51,6 +51,8 @@ struct DrinkView: View {
             return Color.pink
         case "pop":
             return Color.purple
+        case "alcoholic":
+            return Color.red
         default:
             return Color.gray
         }

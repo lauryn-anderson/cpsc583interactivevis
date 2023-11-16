@@ -12,16 +12,17 @@ struct DrinkDetailView: View {
     
     var body: some View {
         VStack {
-            Spacer()
             if let drink = targetDrink {
                 DrinkDetailText(drink: drink)
+                    .frame(alignment: .top)
             } else {
                 Text("Select a drink to see details")
-                    .padding(10)
+                    .frame(alignment: .top)
             }
             Spacer()
         }
-        .frame(width: 150, alignment: .leading)
+        .padding(10)
+        .frame(width: 150, alignment: .topLeading)
         .background(.selection)
     }
 }
