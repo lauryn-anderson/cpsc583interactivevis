@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-public struct Drink: Identifiable {
-    public var id = UUID()
+@Model
+public class Drink {
     var person: String
     var datetime: Date
     var amount: Int
@@ -16,7 +17,36 @@ public struct Drink: Identifiable {
     var beverage: String
     var contextCategory: String
     var context: String
+    
+    init(person: String, datetime: Date, amount: Int, beverageCategory: String, beverage: String, contextCategory: String, context: String) {
+        self.person = person
+        self.datetime = datetime
+        self.amount = amount
+        self.beverageCategory = beverageCategory
+        self.beverage = beverage
+        self.contextCategory = contextCategory
+        self.context = context
+    }
 }
+
+
+@MainActor
+let previewContainer: ModelContainer = {
+    do {
+        let container = try ModelContainer(
+            for: Drink.self,
+            configurations: ModelConfiguration(isStoredInMemoryOnly: true)
+        )
+        let modelContext = container.mainContext
+        if try modelContext.fetch(FetchDescriptor<Drink>()).isEmpty {
+            let drinks = importDrinkData()
+            drinks.forEach { container.mainContext.insert($0) }
+        }
+        return container
+    } catch {
+        fatalError("Failed to create container")
+    }
+}()
 
 public func importDrinkData() -> [Drink] {
     var drinks = [Drink]()
@@ -41,11 +71,6 @@ public func importDrinkData() -> [Drink] {
     // if you have a header row, remove it here
     rows.removeFirst()
     
-    // define format of date strings
-    let dateFormatter = DateFormatter()
-    dateFormatter.locale = Locale(identifier: "en-CA")
-    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-
     // now loop around each row, and split it into each of its columns
     for row in rows {
         let columns = row.components(separatedBy: ",")
@@ -53,7 +78,7 @@ public func importDrinkData() -> [Drink] {
         // check that we have enough columns
         if columns.count == 7 {
             let name = columns[0]
-            let datetime = dateFormatter.date(from: columns[1])!
+            let datetime = DateTools.parseDate(date: columns[1])
             let amount = Int(columns[2]) ?? 0
             let beverageCategory = columns[3]
             let beverage = columns[4]
@@ -61,7 +86,6 @@ public func importDrinkData() -> [Drink] {
             let context = columns[6]
 
             let drink = Drink(person: name, datetime: datetime, amount: amount, beverageCategory: beverageCategory, beverage: beverage, contextCategory: contextCategory, context: context)
-//            let drink = Drink(id: ObjectIdentifier(Drink), person: <#T##String#>, datetime: <#T##Date#>, amount: <#T##Int#>, beverageCategory: <#T##String#>, beverage: <#T##String#>, contextCategory: <#T##String#>, context: <#T##String#>)
             drinks.append(drink)
         }
     }

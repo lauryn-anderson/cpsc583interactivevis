@@ -13,5 +13,6 @@ struct cpsc583visualizationApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(previewContainer)
     }
 }

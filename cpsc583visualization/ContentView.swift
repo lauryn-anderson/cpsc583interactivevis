@@ -6,23 +6,33 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    var drinks = importDrinkData()
-    
+    @Query(
+        filter: #Predicate<Drink> { drink in
+            drink.person == "Lauryn"
+        },
+        sort: \Drink.datetime, order: .reverse
+    ) private var drinks: [Drink]
+    @Environment(\.modelContext) private var modelContext
+    @State var targetDrink: Drink? = nil
+
     var body: some View {
-        VStack {
-            ForEach(drinks) { drink in
-                DrinkView(drink: drink)
+        HStack {
+            ScrollView {
+                HStack {
+                    ForEach((0...0), id: \.self) { day in
+                        DrinkStackView(drinks: drinks, day: day, targetDrink: $targetDrink)
+                    }
+                }
             }
+            DrinkDetailView(targetDrink: $targetDrink)
         }
-        .padding()
-//        .onAppear(perform: convertCSVIntoArray)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
+        .modelContainer(previewContainer)
 }
