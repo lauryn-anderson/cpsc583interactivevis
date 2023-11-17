@@ -14,7 +14,7 @@ struct IndividualView: View {
     @State var targetDrink: Drink? = nil
     @Binding var person: Drink.People
     @Binding var day: Int
-
+    
     init(person: Binding<Drink.People>, day: Binding<Int>) {
         self._person = person
         self._day = day
@@ -29,15 +29,16 @@ struct IndividualView: View {
             sort: \Drink.datetime, order: .reverse
         )
     }
-
+    
     var body: some View {
         HStack {
             ScrollView {
                 VStack(spacing: 0) {
+                    Spacer()
+                        .frame(maxWidth: .infinity)
                     HStack {
                         DrinkStackView(drinks: drinks, day: day, targetDrink: $targetDrink)
                     }
-                    Spacer()
                     HStack(spacing: 0) {
                         List {
                             Picker("Person", selection: $person) {
@@ -54,13 +55,16 @@ struct IndividualView: View {
                             }
                         }
                     }
-                    .frame(width: 550, height: 50, alignment: .bottom)
+                    .frame(width: 550, height: 50)
+                    Spacer()
                 }
+                .frame(height: 650)
             }
             DrinkDetailView(targetDrink: $targetDrink)
                 .frame(alignment: .top)
+                .frame(height: 650)
         }
-        .frame(height: 700)
+        .frame(height: 650)
     }
 }
 

@@ -16,10 +16,12 @@ struct DrinkDetailView: View {
                 DrinkDetailText(drink: drink)
                     .frame(alignment: .top)
             } else {
-                Text("Select a drink to see details")
+                TextRectangle(text: "Select a drink to see details")
                     .frame(alignment: .top)
             }
             Spacer()
+            Legend()
+                .frame(height: 300)
         }
         .padding(10)
         .frame(width: 150, alignment: .topLeading)

@@ -45,7 +45,6 @@ struct DrinkStackView: View {
                     }
                     Divider()
                 }
-                .frame(alignment: .bottom)
                 
                 // bars
                 HStack(spacing: 0) {
@@ -77,7 +76,7 @@ struct DrinkStackView: View {
             Text("time")
                 .font(.caption)
         }
-        .frame(width: width + 40)
+        .frame(width: width + 40, alignment: .bottom)
         .padding()
     }
 }
