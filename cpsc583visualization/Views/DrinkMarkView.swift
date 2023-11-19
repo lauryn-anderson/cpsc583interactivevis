@@ -15,9 +15,6 @@ import SwiftData
 
 struct DrinkMarkView: View {
     let drink: Drink
-    let width: CGFloat = 500
-    let widthDivisor: CGFloat = 60 * 24
-    let heightDivisor: CGFloat = 10
     @Binding var targetDrink: Drink?
 
     var body: some View {
@@ -26,15 +23,15 @@ struct DrinkMarkView: View {
         } label: {
             HStack {
                 Spacer()
-                    .frame(width: CGFloat(DateTools.minuteOfDay(datetime: drink.datetime)) / widthDivisor * width)
+                    .frame(width: CGFloat(DateTools.minuteOfDay(datetime: drink.datetime)) / CGFloat(Constants.minutesInDay) * Constants.xAxisWidth)
                 VStack(spacing: 0) {
                     Rectangle()
                         .foregroundColor(LegendView.beverageColor(beverage: drink.beverageCategory))
                     Divider()
                 }
-                .frame(height: CGFloat(integerLiteral: drink.amount) / heightDivisor)
+                .frame(height: CGFloat(integerLiteral: drink.amount) / Constants.millilitreScaleFactor)
             }
-            .frame(width: width)
+            .frame(width: Constants.xAxisWidth)
         }
         .buttonStyle(.plain)
     }

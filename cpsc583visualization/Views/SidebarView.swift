@@ -24,10 +24,10 @@ struct SidebarView: View {
             }
             Spacer()
             LegendView()
-                .frame(height: 300)
+                .frame(height: Constants.legendHeight)
         }
         .padding(10)
-        .frame(width: 150, alignment: .topLeading)
+        .frame(width: Constants.sidebarWidth, alignment: .topLeading)
         .background(.selection)
     }
 }

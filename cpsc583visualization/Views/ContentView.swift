@@ -4,7 +4,9 @@
 //
 //  Created by Lauryn Anderson on 2023-11-15.
 //
-//  Base view that defines global variables and hosts vis
+//  Base view that defines global variables and constants
+//  and hosts interactive visualization
+//
 
 import SwiftUI
 import SwiftData
@@ -19,6 +21,19 @@ struct ContentView: View {
     var body: some View {
         InteractionView(person: $person, day: $day)
     }
+}
+
+struct Constants {
+    static let UIHeight: CGFloat = 650
+    static let chartHeight: CGFloat = 600
+    static let legendHeight: CGFloat = 300
+    static let chartWidth: CGFloat = 550
+    static let xAxisWidth: CGFloat = 500
+    static let sidebarWidth: CGFloat = 150
+    static let millilitreScaleFactor: CGFloat = 10
+    static let millilitresInUnit = 250
+    static let referenceLineIndex = 8
+    static let minutesInDay = 24 * 60
 }
 
 #Preview {

@@ -58,17 +58,17 @@ struct InteractionView: View {
                             }
                         }
                     }
-                    .frame(width: 550, height: 50)
+                    .frame(width: Constants.chartWidth, height: Constants.UIHeight - Constants.chartHeight)
                     Spacer()
                 }
-                .frame(height: 650)
+                .frame(height: Constants.UIHeight)
             }
             // right-hand side has details on demand + colour legend
             SidebarView(targetDrink: $targetDrink)
                 .frame(alignment: .top)
-                .frame(height: 650)
+                .frame(height: Constants.UIHeight)
         }
-        .frame(height: 650)
+        .frame(height: Constants.UIHeight)
     }
 }
 

@@ -12,13 +12,12 @@ import SwiftUI
 struct DrinkChartView: View {
     var drinks: [Drink]
     var day: Int
-    let width: CGFloat = 500
     @Binding var targetDrink: Drink?
 
     var body: some View {
         let filteredDrinks = filterDrinksByDay(drinks: drinks, day: day)
         let totalAmount = getTotalDrinkAmount(drinks: filteredDrinks)
-        let referenceLineCount = max(8, totalAmount / 250 + 1)
+        let referenceLineCount = max(Constants.referenceLineIndex, totalAmount / Constants.millilitresInUnit + 1)
         
         VStack(spacing: 0) {
             ZStack {
@@ -28,22 +27,22 @@ struct DrinkChartView: View {
                     ForEach((1...referenceLineCount).reversed(), id: \.self) { cup in
                         VStack(spacing: 0) {
                             // make reference line red
-                            if (cup == 8) {
+                            if (cup == Constants.referenceLineIndex) {
                                 Divider()
                                     .foregroundStyle(.red)
-                                Text(String(cup * 250))
+                                Text(String(cup * Constants.millilitresInUnit))
                                     .foregroundStyle(.red)
                                     .font(.caption)
-                                    .frame(width: width + 40, alignment: .topLeading)
+                                    .frame(width: Constants.chartWidth, alignment: .topLeading)
                             } else {
                                 Divider()
-                                Text(String(cup * 250))
+                                Text(String(cup * Constants.millilitresInUnit))
                                     .font(.caption)
-                                    .frame(width: width + 40, alignment: .topLeading)
+                                    .frame(width: Constants.chartWidth, alignment: .topLeading)
                             }
                             Spacer()
                         }
-                        .frame(width: width + 40, height: 25)
+                        .frame(width: Constants.chartWidth, height: CGFloat(Constants.millilitresInUnit) / Constants.millilitreScaleFactor)
                     }
                     Divider()
                 }
@@ -72,13 +71,13 @@ struct DrinkChartView: View {
                 ForEach((0...23), id: \.self) { hour in
                     Text(String(hour))
                         .font(.caption)
-                        .frame(width: width/24, alignment: .leading)
+                        .frame(width: Constants.xAxisWidth / 24, alignment: .leading)
                 }
             }
             Text("time")
                 .font(.caption)
         }
-        .frame(width: width + 40, alignment: .bottom)
+        .frame(width: Constants.chartWidth, alignment: .bottom)
         .padding()
     }
 }
