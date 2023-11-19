@@ -1,14 +1,19 @@
 //
-//  DrinkView.swift
+//  DrinkMarkView.swift
 //  cpsc583visualization
 //
 //  Created by Lauryn Anderson on 2023-11-15.
 //
+//  Clickable rectange that encodes
+//   a) drink amount (height)
+//   b) drink type category (colour)
+//   c) drink time (horizontal displacement)
+// 
 
 import SwiftUI
 import SwiftData
 
-struct DrinkView: View {
+struct DrinkMarkView: View {
     let drink: Drink
     let width: CGFloat = 500
     let widthDivisor: CGFloat = 60 * 24
@@ -24,45 +29,21 @@ struct DrinkView: View {
                     .frame(width: CGFloat(DateTools.minuteOfDay(datetime: drink.datetime)) / widthDivisor * width)
                 VStack(spacing: 0) {
                     Rectangle()
-                        .foregroundColor(getColor())
+                        .foregroundColor(LegendView.beverageColor(beverage: drink.beverageCategory))
                     Divider()
                 }
                 .frame(height: CGFloat(integerLiteral: drink.amount) / heightDivisor)
             }
             .frame(width: width)
         }
-//        .buttonStyle(.borderless)
         .buttonStyle(.plain)
-    }
-    
-    func getColor() -> Color {
-        switch drink.beverageCategory {
-        case "tea":
-            return Color.yellow
-        case "coffee":
-            return Color.brown
-        case "water":
-            return Color.cyan
-        case "juice":
-            return Color.orange
-        case "milk":
-            return Color.white
-        case "smoothie/shake":
-            return Color.pink
-        case "pop":
-            return Color.purple
-        case "alcoholic":
-            return Color.red
-        default:
-            return Color.gray
-        }
     }
 }
 
-struct DrinkView_Previews: PreviewProvider {
+struct DrinkMarkView_Previews: PreviewProvider {
     static let drink = Drink(person: "Lauryn", datetime: Date(), amount: 200, beverageCategory: "tea", beverage: "peppermint tea", contextCategory: "routine", context: "wake up")
     
     static var previews: some View {
-        DrinkView(drink: drink, targetDrink: .constant(drink))
+        DrinkMarkView(drink: drink, targetDrink: .constant(drink))
     }
 }

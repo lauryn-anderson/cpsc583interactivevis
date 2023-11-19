@@ -1,13 +1,15 @@
 //
-//  DrinkStackView.swift
+//  DrinkChartView.swift
 //  cpsc583visualization
 //
 //  Created by Lauryn Anderson on 2023-11-16.
 //
+//  Chart that arranges drink marks and supplies x/y-axes
+//
 
 import SwiftUI
 
-struct DrinkStackView: View {
+struct DrinkChartView: View {
     var drinks: [Drink]
     var day: Int
     let width: CGFloat = 500
@@ -54,7 +56,7 @@ struct DrinkStackView: View {
                         Spacer()
                         ForEach(filteredDrinks) { drink in
                             if (DateTools.isOn(day: day, date: drink.datetime)) {
-                                DrinkView(drink: drink, targetDrink: $targetDrink)
+                                DrinkMarkView(drink: drink, targetDrink: $targetDrink)
                             }
                         }
                     }
@@ -82,5 +84,5 @@ struct DrinkStackView: View {
 }
 
 #Preview {
-    DrinkStackView(drinks: [], day: 2, targetDrink: .constant(nil))
+    DrinkChartView(drinks: [], day: 2, targetDrink: .constant(nil))
 }

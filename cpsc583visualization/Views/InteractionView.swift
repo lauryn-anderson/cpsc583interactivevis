@@ -1,14 +1,16 @@
 //
-//  IndividualView.swift
+//  InteractionView.swift
 //  cpsc583visualization
 //
 //  Created by Lauryn Anderson on 2023-11-16.
+//
+//  Embeds visualization in interactive UI
 //
 
 import SwiftUI
 import SwiftData
 
-struct IndividualView: View {
+struct InteractionView: View {
     @Environment(\.modelContext) var modelContext
     @Query private var drinks: [Drink]
     @State var targetDrink: Drink? = nil
@@ -32,12 +34,13 @@ struct IndividualView: View {
     
     var body: some View {
         HStack {
+            // left-hand side is scrollable, with main visualization + person/day pickers
             ScrollView {
                 VStack(spacing: 0) {
                     Spacer()
                         .frame(maxWidth: .infinity)
                     HStack {
-                        DrinkStackView(drinks: drinks, day: day, targetDrink: $targetDrink)
+                        DrinkChartView(drinks: drinks, day: day, targetDrink: $targetDrink)
                     }
                     HStack(spacing: 0) {
                         List {
@@ -60,7 +63,8 @@ struct IndividualView: View {
                 }
                 .frame(height: 650)
             }
-            DrinkDetailView(targetDrink: $targetDrink)
+            // right-hand side has details on demand + colour legend
+            SidebarView(targetDrink: $targetDrink)
                 .frame(alignment: .top)
                 .frame(height: 650)
         }
@@ -69,6 +73,6 @@ struct IndividualView: View {
 }
 
 #Preview {
-    IndividualView(person: .constant(.david), day: .constant(1))
+    InteractionView(person: .constant(.david), day: .constant(1))
         .modelContainer(previewContainer)
 }

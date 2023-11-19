@@ -4,6 +4,10 @@
 //
 //  Created by Lauryn Anderson on 2023-11-15.
 //
+//  Data model for drink data
+//  Leverages SwiftData containers for queryability
+//  Imports data from .csv file
+//
 
 import Foundation
 import SwiftData
@@ -50,7 +54,6 @@ public class Drink {
         }
     }
 }
-
 
 @MainActor
 let previewContainer: ModelContainer = {

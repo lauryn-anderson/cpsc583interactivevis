@@ -4,6 +4,7 @@
 //
 //  Created by Lauryn Anderson on 2023-11-15.
 //
+//  Base view that defines global variables and hosts vis
 
 import SwiftUI
 import SwiftData
@@ -16,7 +17,7 @@ struct ContentView: View {
     @State private var day: Int = 0
 
     var body: some View {
-        IndividualView(person: $person, day: $day)
+        InteractionView(person: $person, day: $day)
     }
 }
 

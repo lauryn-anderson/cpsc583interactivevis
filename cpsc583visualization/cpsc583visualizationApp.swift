@@ -4,6 +4,8 @@
 //
 //  Created by Lauryn Anderson on 2023-11-15.
 //
+//  Main file to execute application with the appropriate data source
+//
 
 import SwiftUI
 
