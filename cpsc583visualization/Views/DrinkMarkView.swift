@@ -29,7 +29,7 @@ struct DrinkMarkView: View {
                         .foregroundColor(LegendView.beverageColor(beverage: drink.beverageCategory))
                 }
                 .frame(width: Constants.markWidth, height: CGFloat(integerLiteral: drink.amount) / Constants.millilitreScaleFactor)
-                Spacer()
+                Spacer(minLength: 0)
                 VStack(spacing: 0) {
                     RoundedRectangle(cornerSize: Constants.markCorners)
                         .foregroundColor(LegendView.beverageColor(beverage: drink.beverageCategory))
@@ -42,6 +42,25 @@ struct DrinkMarkView: View {
         }
         .buttonStyle(.plain)
     }
+}
+
+struct DrinkTotalLabel: View {
+    var total: Int
+    
+    var body: some View {
+            HStack {
+                Spacer()
+                    .frame(width: Constants.xAxisWidth)
+                VStack(spacing: 0) {
+                    Text(String(total))
+                        .font(.caption)
+                }
+                .frame(width: Constants.bottleWidth)
+
+            }
+            .frame(width: Constants.xAxisWidth + Constants.bottleWidth)
+    }
+
 }
 
 struct DrinkMarkView_Previews: PreviewProvider {

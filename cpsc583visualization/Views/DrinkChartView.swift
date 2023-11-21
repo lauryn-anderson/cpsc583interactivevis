@@ -53,6 +53,7 @@ struct DrinkChartView: View {
                     Divider()
                     VStack(spacing: 0) {
                         Spacer()
+                        DrinkTotalLabel(total: totalAmount)
                         ForEach(filteredDrinks) { drink in
                             if (DateTools.isOn(day: day, date: drink.datetime)) {
                                 DrinkMarkView(drink: drink, targetDrink: $targetDrink)
