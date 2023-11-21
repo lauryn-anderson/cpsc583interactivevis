@@ -48,10 +48,10 @@ struct TextRectangle: View {
                 } else {
                     Text(text)
                         .foregroundStyle(.black)
+                        .padding(5)
                 }
                 Spacer()
             }
-            .padding(2)
         }
         .frame(minHeight: 20)
     }

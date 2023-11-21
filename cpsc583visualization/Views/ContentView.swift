@@ -24,12 +24,14 @@ struct ContentView: View {
 }
 
 struct Constants {
-    static let chartHeight: CGFloat = 600
+    static let chartHeight: CGFloat = 640
     static let pickerHeight: CGFloat = 100
     static let legendHeight: CGFloat = 300
-    static let chartWidth: CGFloat = 590
+    static let chartWidth: CGFloat = 600
     static let xAxisWidth: CGFloat = 500
-    static let bottleWidth: CGFloat = 50
+    static let bottleWidth: CGFloat = 60
+    static let miniBottleWidth: CGFloat = 20
+    static let miniLabelWidth: CGFloat = 70
     static let sidebarWidth: CGFloat = 150
     static let markWidth: CGFloat = 5
     static let markCorners = CGSize(width: 2, height: 2)

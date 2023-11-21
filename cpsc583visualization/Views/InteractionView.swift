@@ -44,6 +44,8 @@ struct InteractionView: View {
                     }
                     HStack(spacing: 0) {
                         VStack {
+                            Spacer()
+                                .frame(maxHeight: .infinity)
                             List {
                                 Picker("Person", selection: $person) {
                                     ForEach(Drink.People.allCases) { person in
@@ -51,16 +53,10 @@ struct InteractionView: View {
                                     }
                                 }
                             }
-                            List {
-                                Picker("Day", selection: $day) {
-                                    ForEach((0...6), id: \.self) { dayOption in
-                                        Text(String(dayOption))
-                                    }
-                                }
-                            }
+                            Spacer()
                         }
                         Spacer()
-                        MiniDrinkChartView(drinks: drinks)
+                        MiniDrinkChartView(drinks: drinks, targetDay: $day)
                     }
                     .frame(width: Constants.chartWidth, height: Constants.pickerHeight)
                     Spacer()
