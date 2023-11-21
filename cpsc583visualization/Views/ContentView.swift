@@ -27,9 +27,12 @@ struct Constants {
     static let UIHeight: CGFloat = 650
     static let chartHeight: CGFloat = 600
     static let legendHeight: CGFloat = 300
-    static let chartWidth: CGFloat = 550
+    static let chartWidth: CGFloat = 590
     static let xAxisWidth: CGFloat = 500
+    static let bottleWidth: CGFloat = 50
     static let sidebarWidth: CGFloat = 150
+    static let markWidth: CGFloat = 5
+    static let markCorners = CGSize(width: 2, height: 2)
     static let millilitreScaleFactor: CGFloat = 10
     static let millilitresInUnit = 250
     static let referenceLineIndex = 8

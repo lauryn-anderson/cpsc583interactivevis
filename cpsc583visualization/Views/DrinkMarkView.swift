@@ -25,13 +25,20 @@ struct DrinkMarkView: View {
                 Spacer()
                     .frame(width: CGFloat(DateTools.minuteOfDay(datetime: drink.datetime)) / CGFloat(Constants.minutesInDay) * Constants.xAxisWidth)
                 VStack(spacing: 0) {
-                    Rectangle()
+                    RoundedRectangle(cornerSize: Constants.markCorners)
+                        .foregroundColor(LegendView.beverageColor(beverage: drink.beverageCategory))
+                }
+                .frame(width: Constants.markWidth, height: CGFloat(integerLiteral: drink.amount) / Constants.millilitreScaleFactor)
+                Spacer()
+                VStack(spacing: 0) {
+                    RoundedRectangle(cornerSize: Constants.markCorners)
                         .foregroundColor(LegendView.beverageColor(beverage: drink.beverageCategory))
                     Divider()
                 }
-                .frame(height: CGFloat(integerLiteral: drink.amount) / Constants.millilitreScaleFactor)
+                .frame(width: Constants.bottleWidth, height: CGFloat(integerLiteral: drink.amount) / Constants.millilitreScaleFactor)
+
             }
-            .frame(width: Constants.xAxisWidth)
+            .frame(width: Constants.xAxisWidth + Constants.bottleWidth)
         }
         .buttonStyle(.plain)
     }

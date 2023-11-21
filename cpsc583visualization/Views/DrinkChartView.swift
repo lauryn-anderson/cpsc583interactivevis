@@ -73,6 +73,8 @@ struct DrinkChartView: View {
                         .font(.caption)
                         .frame(width: Constants.xAxisWidth / 24, alignment: .leading)
                 }
+                Spacer()
+                    .frame(width: Constants.bottleWidth)
             }
             Text("time")
                 .font(.caption)

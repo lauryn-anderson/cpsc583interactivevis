@@ -39,7 +39,7 @@ struct TextRectangle: View {
     var body: some View {
         ZStack {
             if let color {
-                Rectangle()
+                RoundedRectangle(cornerSize: Constants.markCorners)
                     .foregroundColor(color)
             }
             HStack {
