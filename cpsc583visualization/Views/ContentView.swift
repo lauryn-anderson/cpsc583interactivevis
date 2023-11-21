@@ -24,8 +24,8 @@ struct ContentView: View {
 }
 
 struct Constants {
-    static let UIHeight: CGFloat = 650
     static let chartHeight: CGFloat = 600
+    static let pickerHeight: CGFloat = 100
     static let legendHeight: CGFloat = 300
     static let chartWidth: CGFloat = 590
     static let xAxisWidth: CGFloat = 500
@@ -34,6 +34,7 @@ struct Constants {
     static let markWidth: CGFloat = 5
     static let markCorners = CGSize(width: 2, height: 2)
     static let millilitreScaleFactor: CGFloat = 10
+    static let miniScaleFactor: CGFloat = 70
     static let millilitresInUnit = 250
     static let referenceLineIndex = 8
     static let minutesInDay = 24 * 60

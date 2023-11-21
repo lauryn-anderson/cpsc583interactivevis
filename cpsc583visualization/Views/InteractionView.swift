@@ -43,32 +43,36 @@ struct InteractionView: View {
                         DrinkChartView(drinks: drinks, day: day, targetDrink: $targetDrink)
                     }
                     HStack(spacing: 0) {
-                        List {
-                            Picker("Person", selection: $person) {
-                                ForEach(Drink.People.allCases) { person in
-                                    Text(person.rawValue.capitalized)
+                        VStack {
+                            List {
+                                Picker("Person", selection: $person) {
+                                    ForEach(Drink.People.allCases) { person in
+                                        Text(person.rawValue.capitalized)
+                                    }
+                                }
+                            }
+                            List {
+                                Picker("Day", selection: $day) {
+                                    ForEach((0...6), id: \.self) { dayOption in
+                                        Text(String(dayOption))
+                                    }
                                 }
                             }
                         }
-                        List {
-                            Picker("Day", selection: $day) {
-                                ForEach((0...6), id: \.self) { dayOption in
-                                    Text(String(dayOption))
-                                }
-                            }
-                        }
+                        Spacer()
+                        MiniDrinkChartView(drinks: drinks)
                     }
-                    .frame(width: Constants.chartWidth, height: Constants.UIHeight - Constants.chartHeight)
+                    .frame(width: Constants.chartWidth, height: Constants.pickerHeight)
                     Spacer()
                 }
-                .frame(height: Constants.UIHeight)
+                .frame(height: Constants.chartHeight + Constants.pickerHeight)
             }
             // right-hand side has details on demand + colour legend
             SidebarView(targetDrink: $targetDrink)
                 .frame(alignment: .top)
-                .frame(height: Constants.UIHeight)
+                .frame(height: Constants.chartHeight + Constants.pickerHeight)
         }
-        .frame(height: Constants.UIHeight)
+        .frame(height: Constants.chartHeight + Constants.pickerHeight)
     }
 }
 
